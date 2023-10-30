@@ -33,6 +33,10 @@ describe("exercise1 - problem4", () => {
       expected: "1f You C4n R34d 7h15, You R34lly N33d 2 G37 L41d",
     },
   ])('.makeTitleCase("$text")', ({ text, expected }) => {
-    expect(makeTitleCase(text)).toBe(expected);
+    const result = makeTitleCase(text);
+    console.log(`Input: "${text}"`);
+    console.log(`Expected: "${expected}"`);
+    console.log(`Result: "${result}"`);
+    expect(result).toBe(expected);
   });
 });
